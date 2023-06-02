@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #1f305e;
+  font-family: "Roboto mono", sans-serif;
+  font-size: 62.5%;
+  font-weight: normal;
+  background-color: aliceblue;
+}
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  background-color: #fff;
+  margin: 20rem auto;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 2rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+#new-task-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+  margin: 0 1rem;
+}
+#new-task {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  flex-grow: 1;
+  border: none;
+}
+
+#new-task:focus {
+  outline: 1px solid #f0f8ff;
+}
+
+button[type="submit"] {
+  background-color: rgb(161, 215, 248);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #7c9ed9;
+}
+
+.task-container {
+  padding: 2rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task__text {
+  flex-grow: 1;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #333;
+}
+
+.task__text:focus {
+  outline: 1px solid #f0f8ff;
+}
+
+.task button {
+  background-color: transparent;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.task button:focus {
+  outline: 1px solid #f0f8ff;
+}
+
+.task button:hover {
+  cursor: pointer;
+  background-color: #f0f8ff;
+}
+
+ion-icon {
+  font-size: 2rem;
+}
+
+.btn__edit {
+  color: #29ab87;
+}
+
+.btn__remove {
+  color: #ed1b24;
+}
+
+.clear-items {
+  background-color: transparent;
+  color: #ed1b24;
+  padding: 1rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.clear-items:focus {
+  outline: 1px solid #f0f8ff;
+}
+
+.clear-items:hover {
+  cursor: pointer;
+  background-color: #fdbcb421;
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    width: 90%;
+  }
+}
